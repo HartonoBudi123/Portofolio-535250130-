@@ -8,6 +8,13 @@ html {
   --warna-teks-muda: #e2e8f0;
 }
 
+.menu-icon {
+  font-size: 2rem;
+  color: var(--warna-aksen);
+  cursor: pointer;
+  user-select: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -228,7 +235,7 @@ div {
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
+    transition: 0.7s ease-in-out;
 }
 
 .projects-box:hover {
@@ -310,59 +317,184 @@ div {
     color: rgb(2, 190, 165);
 }
 
-@media (max-width: 1285px) {
+@media (max-width: 1200px) {
     html {
         font-size: 55%;
     }
-    .projects-container {
-        padding-bottom: 7rem;
-        grid-template-columns: repeat(2, 1fr);
-        margin: 0 5rem;
+    .school img,
+    .school2 img {
+        width: 320px;
+        height: 320px;
     }
 }
 
+@media (max-width: 991px) {
+    .header {
+        width: 220px;
+    }
+    .home,
+    .education,
+    .projects {
+        margin-left: 220px;
+    }
+    .footer ul li a,
+    .footer .text {
+        margin-left: 0;
+    }
+    .school img,
+    .school2 img {
+        width: 250px;
+        height: 250px;
+    }
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
 @media (max-width: 768px) {
-    #menu-icon {
+    .home,
+    .education,
+    .projects {
+        margin-left: 0;
+        padding: 9rem 2rem 4rem;
+    }
+
+    .footer ul li a,
+    .footer .text {
+        margin-left: 0;
+    }
+
+    .header {
+        width: 100%;
+        height: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        border-right: none;
+        border-bottom: 1px solid #2a2a35;
+    }
+
+    .profile, 
+    .name {
+        margin-bottom: 0;
+    }
+
+    .profile img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .name {
+        font-size: 1.6rem;
+    }
+
+    .menu-icon {
         display: block;
     }
+
     .navbar {
         position: absolute;
         top: 100%;
         right: 0;
-        width: 50%;
-        padding: 1rem 3%;
-        background: var(--second-bg-color);
-        backdrop-filter: blur(20px);
-        border-bottom-left-radius: 2rem;
-        border-left: 2px solid var(--main-color);
-        border-bottom: 2px solid var(--main-color);
-        
+        width: 100%;
+        background-color: #121218;
+        border-bottom: 2px solid var(--warna-aksen);
+        padding: 1rem 2rem;
         display: none;
     }
+
     .navbar.active {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
+
     .navbar a {
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-        color: white;
+        padding: 0.8rem;
+        text-align: center;
     }
-    .home-content h3 {
-        font-size: 2.6rem;
+
+   
+    .home {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
-    .home-content h1 {
-        font-size: 8rem;
-        margin-top: 3rem;
-    }
-    .home-content p {
-        max-width: 600px;
-        margin: 0 auto;
-    }
+
+    .home h1 { font-size: 3rem; }
+    .home h2 { font-size: 2.4rem; }
+    .home h3 { font-size: 1.8rem; }
+    .home #bio { font-size: 1.3rem; }
+
+    .education h1,
     .projects h2 {
-        margin-bottom: 3rem;
+        font-size: 3.5rem;
     }
+
+    .school,
+    .school2 {
+        text-align: center;
+    }
+
+    .school h3,
+    .school2 h3 {
+        text-align: center;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .school img,
+    .school2 img {
+        width: 100%;
+        max-width: 250px;
+        height: 250px;
+        margin: 1rem auto;
+    }
+
     .projects-container {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+    .projects-box {
+        height: auto;
+        min-height: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+
+    .home,
+    .education,
+    .projects {
+        padding: 8rem 1.5rem 3rem;
+    }
+
+    .home h1 { font-size: 2.6rem; }
+    .home h2 { font-size: 2.1rem; }
+
+    .education h1,
+    .projects h2 {
+        font-size: 3rem;
+    }
+
+    .school img,
+    .school2 img {
+        max-width: 200px;
+        height: 200px;
+    }
+
+    .projects-box .projects-info {
+        padding: 1.5rem;
+    }
+
+    .footer ul li {
+        display: block;
+        margin-bottom: 1rem;
     }
 }
