@@ -1,25 +1,26 @@
 html {
-  scroll-behavior: smooth; /* Membuat animasi scroll berjalan mulus */
+    scroll-behavior: smooth;
 }
 
 :root {
-  --warna-aksen: #00eeff;
-  --warna-aksen2: #0b8e97;
-  --warna-teks-muda: #e2e8f0;
+    --warna-aksen: #00eeff;
+    --warna-aksen2: #0b8e97;
+    --warna-aksen3: #a4e1e6;
+    --warna-teks-muda: #e2e8f0;
 }
 
 .menu-icon {
-  font-size: 2rem;
-  color: var(--warna-aksen);
-  cursor: pointer;
-  user-select: none;
+    font-size: 2rem;
+    color: var(--warna-aksen);
+    cursor: pointer;
+    user-select: none;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 div {
@@ -27,18 +28,18 @@ div {
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 260px;
-  height: 100vh;
-  background-color: #121218;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2.5rem 1rem;
-  border-right: 1px solid #2a2a35;
-  z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100vh;
+    background-color: #121218;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 1rem;
+    border-right: 1px solid #2a2a35;
+    z-index: 100;
 }
 
 .name {
@@ -57,33 +58,33 @@ div {
 }
 
 .navbar {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .navbar a {
-  font-size: 1.05rem;
-  font-weight: 500;
-  color: #a0a0b0;
-  text-decoration: none;
-  padding: 0.75rem 1.25rem;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  display: block;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: #a0a0b0;
+    text-decoration: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: block;
 }
 
 .navbar a:hover {
-  color: var(--warna-aksen);
-  background-color: rgba(0, 238, 255, 0.08);
-  padding-left: 1.6rem;
+    color: var(--warna-aksen);
+    background-color: rgba(0, 238, 255, 0.08);
+    padding-left: 1.6rem;
 }
 
 .navbar a.active {
-  color: #121218;
-  background-color: var(--warna-aksen);
-  font-weight: 600;
+    color: #121218;
+    background-color: var(--warna-aksen);
+    font-weight: 600;
 }
 
 .profile {
@@ -99,75 +100,74 @@ div {
 }
 
 .home {
-  margin-left: 260px;
-  min-height: 100vh;
-  background-color: #222229;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 4rem 3rem;
-  display: flex;
+    margin-left: 260px;
+    min-height: 100vh;
+    background-color: #222229;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 4rem 3rem;
+    display: flex;
 }
 
 .home h1 {
-  font-size: 4rem;
-  font-weight: 700;
-  color: var(--warna-aksen);
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--warna-aksen);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .home h2 {
-  font-size: 3.5rem;
-  font-weight: 800;
-  color: #ffffff;
-  line-height: 1.2;
-  margin-bottom: 0.5rem;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .home h2 span {
-  color: var(--warna-aksen);
+    color: var(--warna-aksen);
 }
 
 .home h3 {
-  font-size: 3rem;
-  font-weight: 600;
-  color: #e0e6ed;
-  margin-bottom: 1.2rem;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    font-size: 3rem;
+    font-weight: 600;
+    color: #e0e6ed;
+    margin-bottom: 1.2rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
 .home #bio {
-  font-size: 1.5rem;
-  line-height: 1.7;
-  color: var(--warna-teks-muda);
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+    font-size: 1.5rem;
+    line-height: 1.7;
+    color: var(--warna-teks-muda);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
 }
 
 .home #bio b {
-  color: var(--warna-aksen);
-  font-weight: 600;
+    color: var(--warna-aksen);
+    font-weight: 600;
 }
 
 .education {
-  margin-left: 260px;
-  min-height: 100vh;
-  padding: 3rem 3rem;
-  background-color: var(--warna-aksen2);
-  color: #1a1a1a;
+    margin-left: 260px;
+    min-height: 100vh;
+    padding: 3rem 3rem;
+    background-color: var(--warna-aksen2);
+    color: #1a1a1a;
 }
 
 .education h1 {
     text-align: center;
-  font-size: 5rem;
+    font-size: 5rem;
 }
 
-.school,
-.school2 {
-  margin-bottom: 1rem;
+.school, .school2 {
+    margin-bottom: 1rem;
 }
 
 .school h3{
@@ -189,22 +189,22 @@ div {
 }
 
 .school img {
-  position: relative;
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 50%;
-  display: block;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
 }
 
 .school2 img {
-  position: relative;
-  display: block;
-  margin-left: auto;
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 50%;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .projects {
@@ -235,14 +235,14 @@ div {
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
-    transition: 0.7s ease-in-out;
+    transition: 1s ease-out;
 }
 
 .projects-box:hover {
     background: white;
     color: black;
     border: 5px solid var(--warna-teks-muda);
-    transform: scale(1.1);
+    transform: scale(1.1,1);
 }
 
 .projects-box .projects-info {
@@ -258,7 +258,7 @@ div {
 .projects-info h4 {
     font-size: 2rem;
     font-weight: 800;
-    line-height: 2;
+    line-height: 1;
 }
 
 .projects-info p {
