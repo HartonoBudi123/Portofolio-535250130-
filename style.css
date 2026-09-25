@@ -1,0 +1,368 @@
+html {
+  scroll-behavior: smooth; /* Membuat animasi scroll berjalan mulus */
+}
+
+:root {
+  --warna-aksen: #00eeff;
+  --warna-aksen2: #0b8e97;
+  --warna-teks-muda: #e2e8f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div {
+    padding: 20px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100vh;
+  background-color: #121218;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 1rem;
+  border-right: 1px solid #2a2a35;
+  z-index: 100;
+}
+
+.name {
+    font-size: 2rem;
+    color: var(--warna-teks-muda);
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.7s ease;
+}
+
+.name:hover {
+    transform: scale(1.1);
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.navbar a {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #a0a0b0;
+  text-decoration: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.navbar a:hover {
+  color: var(--warna-aksen);
+  background-color: rgba(0, 238, 255, 0.08);
+  padding-left: 1.6rem;
+}
+
+.navbar a.active {
+  color: #121218;
+  background-color: var(--warna-aksen);
+  font-weight: 600;
+}
+
+.profile {
+    margin-bottom: 2rem;
+}
+
+.profile img {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.home {
+  margin-left: 260px;
+  min-height: 100vh;
+  background-color: #222229;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 4rem 3rem;
+  display: flex;
+}
+
+.home h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--warna-aksen);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.home h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.home h2 span {
+  color: var(--warna-aksen);
+}
+
+.home h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #e0e6ed;
+  margin-bottom: 1.2rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.home #bio {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  color: var(--warna-teks-muda);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+}
+
+.home #bio b {
+  color: var(--warna-aksen);
+  font-weight: 600;
+}
+
+.education {
+  margin-left: 260px;
+  min-height: 100vh;
+  padding: 3rem 3rem;
+  background-color: var(--warna-aksen2);
+  color: #1a1a1a;
+}
+
+.education h1 {
+    text-align: center;
+  font-size: 5rem;
+}
+
+.school,
+.school2 {
+  margin-bottom: 1rem;
+}
+
+.school h3{
+    text-align:left;
+    font-size: 2rem;
+}
+
+.school2 h3{
+    text-align:right;
+    font-size: 2rem;
+}
+
+.school h3 span{
+    color:  lightblue;
+}
+
+.school2 h3 span{
+    color:  lightblue;
+}
+
+.school img {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+.school2 img {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.projects {
+    margin-left: 260px;
+    min-height: 100vh;
+    padding: 4rem 3rem;
+    background-color: var(--warna-aksen);
+    color: #1a1a1a;
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 5rem;
+    color: white;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.projects-box {
+    background-color: var(--warna-teks-muda);
+    height: 300px;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.projects-box:hover {
+    background: white;
+    color: black;
+    border: 5px solid var(--warna-teks-muda);
+    transform: scale(1.1);
+}
+
+.projects-box .projects-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 200px;
+    justify-content: left;
+    align-items: baseline;
+    padding: 2rem 2rem;
+}
+
+.projects-info h4 {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2;
+}
+
+.projects-info p {
+    font-size: 1rem;
+    font-weight: 600;
+    max-height: 100px;
+    line-height: 1.7;
+    margin: auto;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--second-bg-color);
+}
+
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a {
+    margin-left: 260px;
+    color: var(--warna-aksen);
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.footer ul li a:hover {
+    border-bottom: 3px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li a:hover {
+    border-bottom: 3px solid var(--warna-aksen2);
+    color: var(--warna-aksen);
+}
+
+.footer .text {
+    margin-left: 260px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 18px;
+    color: rgb(2, 190, 165);
+}
+
+@media (max-width: 1285px) {
+    html {
+        font-size: 55%;
+    }
+    .projects-container {
+        padding-bottom: 7rem;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3%;
+        background: var(--second-bg-color);
+        backdrop-filter: blur(20px);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        
+        display: none;
+    }
+    .navbar.active {
+        display: block;
+    }
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: white;
+    }
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+    .home-content h1 {
+        font-size: 8rem;
+        margin-top: 3rem;
+    }
+    .home-content p {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .projects h2 {
+        margin-bottom: 3rem;
+    }
+    .projects-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
